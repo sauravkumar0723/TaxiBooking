@@ -14,8 +14,7 @@ The system provides a complete taxi booking workflow with secure admin authentic
 
 ## 🏠 Application Preview
 
-![Taxi Booking Home Page](<img width="1895" height="1017" alt="Home" src="https://github.com/user-attachments/assets/38bf6d13-0154-4fa7-9025-3631d7481c72" />
-)
+![Taxi Booking Home Page](https://github.com/user-attachments/assets/38bf6d13-0154-4fa7-9025-3631d7481c72)
 
 ---
 
