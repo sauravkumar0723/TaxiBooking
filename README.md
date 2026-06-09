@@ -117,17 +117,20 @@ The system provides a complete taxi booking workflow with secure admin authentic
 ### 🔐 Admin Login Page
 
 | Module              | URL                               |
+| ------------------- | --------------------------------- |
 | 🔐 Admin            | http://localhost:8080/login       |
 ![Admin Login](https://github.com/user-attachments/assets/32fb3fc3-5a03-4f53-8704-4abda59a3bd3)
 
 ### 📊 Admin Dashboard
 
 | Module               | URL                                                    |
+| ------------------- | ------------------------------------------------------- |
 | 🔐 Admin Dashboard  |  http://localhost:8080/admin/dashboard?continue         |
 ![Admin Dashboard](https://github.com/user-attachments/assets/edd0c677-7c61-49b0-b863-cfed3bcb8e4a)
 
 ### 🚕 Car Booking page
 | Module               | URL                                 |
+| ------------------- | ------------------------------------ |
 | 🔐 Booking  |  http://localhost:8080/home                  |
 ![Booking Page](https://github.com/user-attachments/assets/9a5fb900-a36e-4fc0-85bc-f7c2da3abf7e)
 
@@ -167,7 +170,7 @@ project-root/
 ### 1. Clone Repository
 
 ```bash id="clone01"
-git clone https://github.com/your-username/taxi-booking-system.git
+git clone https://github.com/sauravkumar0723/taxi-booking-system.git
 ```
 
 ### 2. Configure Database
@@ -175,7 +178,7 @@ git clone https://github.com/your-username/taxi-booking-system.git
 Update `application.properties`
 
 ```properties id="dbconfig01"
-spring.datasource.url=jdbc:mysql://localhost:3306/taxi_db
+spring.datasource.url=jdbc:mysql://localhost:3306/taxi
 spring.datasource.username=root
 spring.datasource.password=your_password
 ```
