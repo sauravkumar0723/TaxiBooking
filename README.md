@@ -12,6 +12,13 @@ The system provides a complete taxi booking workflow with secure admin authentic
 
 ---
 
+## 🏠 Application Preview
+
+![Taxi Booking Home Page](<img width="1895" height="1017" alt="Home" src="https://github.com/user-attachments/assets/38bf6d13-0154-4fa7-9025-3631d7481c72" />
+)
+
+---
+
 ## 🏗️ System Architecture
 
 * MVC (Model–View–Controller) Pattern
@@ -108,10 +115,6 @@ The system provides a complete taxi booking workflow with secure admin authentic
 
 ## 📸 Application Screenshots
 
-### 🏠 Home Page
-
-![Home Page](screenshots/home.png)
-
 ### 🔐 Admin Login Page
 
 ![Admin Login](screenshots/admin-login.png)
@@ -136,7 +139,7 @@ The system provides a complete taxi booking workflow with secure admin authentic
 
 ## 📂 Screenshot Folder Structure
 
-```bash
+```bash id="folder01"
 project-root/
 │
 ├── screenshots/
@@ -154,7 +157,7 @@ project-root/
 
 ### 1. Clone Repository
 
-```bash
+```bash id="clone01"
 git clone https://github.com/your-username/taxi-booking-system.git
 ```
 
@@ -162,7 +165,7 @@ git clone https://github.com/your-username/taxi-booking-system.git
 
 Update `application.properties`
 
-```properties
+```properties id="dbconfig01"
 spring.datasource.url=jdbc:mysql://localhost:3306/taxi_db
 spring.datasource.username=root
 spring.datasource.password=your_password
@@ -172,13 +175,13 @@ spring.datasource.password=your_password
 
 Execute:
 
-```bash
+```bash id="runapp01"
 TaxiBookingSystemApplication.java
 ```
 
 ### 4. Access the Application
 
-```bash
+```bash id="access01"
 http://localhost:8080
 ```
 
@@ -210,7 +213,7 @@ http://localhost:8080
 
 ## 📦 Project Structure
 
-```bash
+```bash id="projectstructure01"
 src/main/java
  ├── controller
  ├── service
