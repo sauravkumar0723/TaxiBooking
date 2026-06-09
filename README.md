@@ -1,4 +1,4 @@
-# 🚖 Taxi Booking System
+# 🚖 Taxi Booking 
 
 > A scalable, enterprise-style full-stack Taxi Booking platform built using Spring Boot and MVC architecture, designed to manage taxi reservations, user operations, and administrative workflows efficiently.
 
@@ -107,7 +107,7 @@ The system provides a complete taxi booking workflow with secure admin authentic
 
 | Module              | URL                               |
 | ------------------- | --------------------------------- |
-| 🏠 Main Application | http://localhost:8080             |
+| 🏠 Main Application | http://localhost:8080/home        |
 | 🔐 Admin Panel      | http://localhost:8080/admin/login |
 
 ---
@@ -116,23 +116,33 @@ The system provides a complete taxi booking workflow with secure admin authentic
 
 ### 🔐 Admin Login Page
 
-![Admin Login](screenshots/admin-login.png)
+| Module              | URL                               |
+| 🔐 Admin            | http://localhost:8080/login       |
+![Admin Login](https://github.com/user-attachments/assets/32fb3fc3-5a03-4f53-8704-4abda59a3bd3)
 
 ### 📊 Admin Dashboard
 
-![Admin Dashboard](screenshots/admin-dashboard.png)
+| Module               | URL                                                    |
+| 🔐 Admin Dashboard  |  http://localhost:8080/admin/dashboard?continue         |
+![Admin Dashboard](https://github.com/user-attachments/assets/edd0c677-7c61-49b0-b863-cfed3bcb8e4a)
 
-### 🚕 Car Booking Page
-
-![Booking Page](screenshots/booking.png)
+### 🚕 Car Booking page
+| Module               | URL                                 |
+| 🔐 Booking  |  http://localhost:8080/home                  |
+![Booking Page](https://github.com/user-attachments/assets/9a5fb900-a36e-4fc0-85bc-f7c2da3abf7e)
 
 ### 📁 File Upload Module
 
-![File Upload](screenshots/file-upload.png)
+| Module              | URL                                        |
+| ------------------- | ------------------------------------------ |
+| 🔐 service          |  http://localhost:8080/admin/addService    |
+![File Upload](https://github.com/user-attachments/assets/c8a38ba5-079d-405c-bafc-720e5b43f818)
 
 ### 📞 Contact Page
-
-![Contact Page](screenshots/contact.png)
+| Module              | URL                                        |
+| ------------------- | ------------------------------------------ |
+|  📞 contact          |   http://localhost:8080/contacts          |
+![Contact Page](https://github.com/user-attachments/assets/f8e73b9f-fed8-4065-8064-3b15824f3fc5)
 
 ---
 
