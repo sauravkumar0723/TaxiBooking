@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Admin Login</title>
+
+<style>
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background: linear-gradient(135deg, #dfe9f3, #ffffff);
+    }
+
+    .login-container{
+        width:380px;
+        background:#ffffff;
+        padding:40px 35px;
+        border-radius:18px;
+        box-shadow:0 10px 30px rgba(0,0,0,0.12);
+        transition:0.3s;
+    }
+
+    .login-container:hover{
+        transform:translateY(-3px);
+    }
+
+    h1{
+        text-align:center;
+        margin-bottom:30px;
+        color:#1f3c88;
+        font-size:30px;
+        letter-spacing:1px;
+    }
+
+    h2{
+        text-align:center;
+        margin-bottom:18px;
+        font-size:15px;
+        color:#e53935;
+        font-weight:600;
+    }
+
+    .logout-message{
+        color:#2e7d32;
+    }
+
+    label{
+        display:block;
+        margin-bottom:8px;
+        margin-top:16px;
+        color:#444;
+        font-size:15px;
+        font-weight:600;
+    }
+
+    input{
+        width:100%;
+        padding:13px;
+        border:1px solid #d0d7e2;
+        border-radius:10px;
+        outline:none;
+        font-size:15px;
+        background:#f9fbfd;
+        transition:0.3s;
+    }
+
+    input:focus{
+        border-color:#1f3c88;
+        background:#fff;
+        box-shadow:0 0 6px rgba(31,60,136,0.2);
+    }
+
+    button{
+        width:100%;
+        padding:13px;
+        margin-top:28px;
+        border:none;
+        border-radius:10px;
+        background: linear-gradient(to right, #1f3c88, #2952cc);
+        color:white;
+        font-size:16px;
+        font-weight:bold;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    button:hover{
+        background: linear-gradient(to right, #17306d, #1f3c88);
+        transform:scale(1.02);
+    }
+
+</style>
+
+</head>
+<body>
+
+   <div class="login-container">
+
+       <h1>ADMIN LOGIN</h1>
+
+       <!-- error=true/false -->
+  
+       <div th:if="${param.error}">
+           <h2>Invalid Credentials</h2>
+       </div>
+   
+       <div th:if="${logout}">
+           <h2 class="logout-message">YOU HAVE BEEN SUCCESSFULLY LOGOUT</h2>
+       </div>
+    
+       <form action="/login" method="post">
+
+           <label>Username</label>
+           <input name="username" type="text" placeholder="Enter username"><br>
+
+           <label>Password</label>
+           <input name="password" type="password" placeholder="Enter password"><br>
+
+           <button>Login</button>
+            
+       </form>
+
+   </div>
+
+</body>
+</html>
